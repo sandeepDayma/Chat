@@ -5,7 +5,7 @@ var http = require('http').Server(app);
 var io = require('socket.io')(http);
 app.use(express.static('chat'));
 //Connection for postgres database.
-var conString="postgres://postgres:password@localhost:5432/Test";
+var conString="postgres://replace_with_db_id:replace_with_password@localhost:5432/Test";
 var client = new pg.Client(conString);
 client.connect();
 
